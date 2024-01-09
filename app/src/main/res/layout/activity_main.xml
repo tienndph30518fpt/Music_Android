@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9900CC"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/zingxoaphong"
+        android:layout_width="410dp"
+        android:layout_height="90dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgbgr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/xoaphongmp3"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/tvtimefirst"/>
+
+    <SeekBar
+        android:layout_width="280dp"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/idseebar"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/tvtimeover"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnBack"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_prev"/>
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_play"/>
+        <ImageButton
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnNext"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_next"/>
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>
